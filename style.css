@@ -10,7 +10,7 @@ body, html {
     /* Fullscreen Chatbot */
     .chat-container {
         width: 100vw; /* Use full viewport width */
-        height: 100vh; /* Use full viewport height */
+        height: 93vh; /* Use full viewport height */
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
