@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiX</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            OptiX
+        </div>
+
+        <!-- Chat Body -->
+        <div class="chat-body" id="chatBody">
+            <!-- Example Messages -->
+            <div class="bot-message">
+                <img src="https://i.ibb.co/gV5Mcyh/naciasv.png" alt="AI Bot Logo">
+                <div class="message-text">Hello! I am OptiX, How can I assist you today?</div>
+            </div>
+        </div>
+
+        <!-- Footer Input Area -->
+        <div class="chat-footer">
+            <input type="text" id="userMessage" placeholder="Type a message...">
+            <button id="sendButton" onclick="sendMessage()">
+                <!-- Send Icon -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path d="M12 21V3M12 3L5 10M12 3L19 10" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Offline Popup -->
+    <div class="offline-popup" id="offlinePopup">
+        <div class="offline-container">
+            <div class="offline-icon">
+                <img src="https://i.postimg.cc/brN2hdRf/20241217-220216.png" alt="Offline Icon">
+            </div>
+            <div class="offline-title">No Internet Connection</div>
+            <div class="offline-message">
+                Your internet connection seems to be offline. Please check your connection and try again.
+            </div>
+            <a href="javascript:void(0);" class="retry-btn" onclick="checkInternet()">Retry</a>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
